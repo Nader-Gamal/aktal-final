@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>اكتال العقارية</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/aktal logo footer.png"
+      type="image/svg+xml"
+    />
+
+    <!-- 
+    - custom css link
+  -->
+    <script
+      src="https://kit.fontawesome.com/2655b3b7cf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style ng.css" />
+    <!-- Map plugin -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css"
+    />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="overlay" data-overlay></div>
+      <div class="header-top">
+        <div class="contain d-flex flex-row-reverse py-2">
+          <ul class="header-top-list">
+            <li>
+              <a href="tel:+966920033262" class="header-top-link">
+                <span>33262 9200</span>
+
+                <ion-icon name="call-outline"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info@aktal.com.sa" class="header-top-link">
+                <span>info@aktal.com.sa</span>
+
+                <ion-icon name="mail-outline"></ion-icon>
+              </a>
+            </li>
+          </ul>
+
+          <div class="wrapper">
+            <ul class="header-top-social-list d-flex flex-row-reverse">
+              <li>
+                <a
+                  href="https://twitter.com/aktal_sa"
+                  class="header-top-social-link"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.instagram.com/aktal_sa"
+                  class="header-top-social-link"
+                  target="_blank"
+                >
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.snapchat.com/add/aktal_sa"
+                  class="header-top-social-link"
+                  target="_blank"
+                >
+                  <ion-icon name="logo-snapchat"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.youtube.com/c/AktalRealEstate"
+                  class="header-top-social-link"
+                  target="_blank"
+                >
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.tiktok.com/@aktal_sa?_t=8mwboomCKUJ&_r=1"
+                  traget="_blank"
+                  class="header-top-social-link"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-tiktok"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-bottom shadow-lg">
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <div
+            href="#"
+            class="d-flex justify-content-between flex-row flex-nowrap mobhead"
+          >
+            <a href="./index.html">
+              <img
+                src="./assets/images/aktal logo.png"
+                alt="aktal logo"
+                width="150px"
+            /></a>
+            <a
+              class="btn mob-nav"
+              data-bs-toggle="offcanvas"
+              href="#offcanvasExample"
+              role="button"
+              aria-controls="offcanvasExample"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </div>
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+          >
+            <div
+              class="offcanvas-header bg-light sub-nav flex justify-content-end"
+            >
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div>
+              <div class="nav-contain">
+                <ul class="mob-nav-items">
+                  <li class="d-flex my-4 mx-2 px-2">
+                    <i class="fa-solid fa-house pt-1 pe-4 text-color"></i>
+                    <a href="./index.html"><p class="text-dark">الرئيسية</p></a>
+                  </li>
+                  <li class="d-flex my-4 mx-2 px-2">
+                    <i class="fa-solid fa-list pt-1 pe-4 text-color"></i>
+                    <a href="./index.html#about"
+                      ><p class="text-dark">من نحن</p></a
+                    >
+                  </li>
+                  <li class="d-flex my-4 mx-2 px-2">
+                    <i class="fa-solid fa-store pt-1 pe-4 text-color"></i>
+                    <a href="./index.html#service"
+                      ><p class="text-dark">الخدمات</p></a
+                    >
+                  </li>
+                  <li class="d-flex my-4 mx-2 px-2">
+                    <i class="fa-solid fa-copyright pt-1 pe-4 text-color"></i>
+                    <a href="./offers.html"><p class="text-dark">العروض</p></a>
+                  </li>
+                </ul>
+
+                <ul class="mob-nav-items">
+                  <li class="d-flex my-4 mx-2 px-2">
+                    <i
+                      class="fa-solid fa-location-crosshairs pt-1 pe-4 text-color"
+                    ></i>
+                    <a href="./index.html#blog"
+                      ><p class="text-dark">اماكن تواجدنا</p></a
+                    >
+                  </li>
+                  <li class="d-flex my-4 mx-2 px-2">
+                    <i
+                      class="fa-solid fa-headphones-simple pt-1 pe-4 text-color"
+                    ></i>
+                    <a href="./contact.html"
+                      ><p class="text-dark">تواصل معنا</p></a
+                    >
+                  </li>
+                  <li class="d-flex my-4 mx-2 px-2">
+                    <i class="fa-solid fa-globe pt-1 pe-4 text-color"></i>
+                    <a href="./contact.html"><p class="text-dark">اللغة</p></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <nav class="navbar d-flex" data-navbar>
+            <div class="navbar-bottom">
+              <ul class="navbar-list">
+                <li>
+                  <a href="#hero" class="navbar-link" data-nav-link>الرئيسية</a>
+                </li>
+
+                <li>
+                  <a href="#about" class="navbar-link" data-nav-link>من نحن</a>
+                </li>
+
+                <li>
+                  <a href="#service" class="navbar-link" data-nav-link
+                    >الخدمات</a
+                  >
+                </li>
+
+                <li>
+                  <a href="./offers.html" class="navbar-link" data-nav-link
+                    >العروض</a
+                  >
+                </li>
+
+                <li>
+                  <a href="#blog" class="navbar-link" data-nav-link
+                    >اماكن تواجدنا</a
+                  >
+                </li>
+
+                <li>
+                  <a href="./contact.html" class="navbar-link" data-nav-link
+                    >تواصل معنا</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="lang-btn pb-2">
+            <div class="dropdown">
+              <button
+                class="btn revMain-col dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-solid fa-globe"></i>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item text-end" href="#">العربية</a></li>
+                <li>
+                  <a class="dropdown-item text-end" href="#">الانجليزية</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 
+        offers
+     -->
+
+    <!-- <section class="property" id="property">
+      <div class="contain">
+        <p class="section-subtitle">العروض</p>
+
+        <h2 class="h2 section-title">المشاريع متاحة</h2>
+      </div>
+
+      <div class="container card mb-3 position-relative my-4">
+        <p class="badge position-absolute offer-bage">متاح</p>
+
+        <a href="./project-details.html">
+          <img
+            src="./image/1.jpeg"
+            class="card-img-top py-2"
+            alt="..."
+            height="100%"
+        /></a>
+        <div class="card-body">
+          <h4 class="card-title">مشروع اكتال 1</h4>
+          <ul class="card-list offer d-flex justify-content-between py-4 flex-wrap">
+            <li class="card-item">
+              <strong class="mb-2">عدد الوحدات</strong>
+              <br />
+              <i class="fa-regular fa-building icon-col"></i>
+              <strong>14</strong>
+            </li>
+            <li class="card-item">
+              <strong class="mb-2">متاح</strong>
+              <br />
+              <i class="fa-solid fa-percent icon-col"></i>
+              <strong>34</strong>
+            </li>
+
+            <li class="card-item">
+              <strong class="mb-2">المساحات</strong>
+              <br />
+              <i class="fa-solid fa-ruler-vertical icon-col"></i>
+              <strong>من 350 ~ 450 متر</strong>
+            </li>
+
+            <li class="card-item">
+              <strong class="mb-2">الموقع</strong>
+              <br />
+              <i class="fa-solid fa-location-dot icon-col"></i>
+              <strong>الرياض,السعودية</strong>
+            </li>
+          </ul>
+          <p class="card-text ms-auto">
+            <a href="./intersted.html">
+              <button class="btna">
+                <span>تسجيل اهتمام</span>
+              </button>
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="container card mb-3 position-relative my-4">
+        <p class="badge position-absolute offer-bage">متاح</p>
+
+        <img
+          src="./image/6.jpg"
+          class="card-img-top py-2"
+          alt="..."
+          height="100%"
+        />
+        <div class="card-body">
+          <h4 class="card-title">مشروع اكتال 1</h4>
+          <ul class="card-list offer d-flex justify-content-between py-4 flex-wrap">
+            <li class="card-item">
+              <strong class="mb-2">عدد الوحدات</strong>
+              <br />
+              <i class="fa-regular fa-building icon-col"></i>
+              <strong>14</strong>
+            </li>
+            <li class="card-item">
+              <strong class="mb-2">متاح</strong>
+              <br />
+              <i class="fa-solid fa-percent icon-col"></i>
+              <strong>34</strong>
+            </li>
+
+            <li class="card-item">
+              <strong class="mb-2">المساحات</strong>
+              <br />
+              <i class="fa-solid fa-ruler-vertical icon-col"></i>
+              <strong>من 350 ~ 450 متر</strong>
+            </li>
+
+            <li class="card-item">
+              <strong class="mb-2">الموقع</strong>
+              <br />
+              <i class="fa-solid fa-location-dot icon-col"></i>
+              <strong>الرياض,السعودية</strong>
+            </li>
+          </ul>
+          <p class="card-text ms-auto">
+            <a href="./intersted.html">
+              <button class="btna">
+                <span>تسجيل اهتمام</span>
+              </button>
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="container card mb-3 position-relative my-4">
+        <p class="badge position-absolute offer-bage">متاح</p>
+
+        <img
+          src="./image/4.png"
+          class="card-img-top py-2"
+          alt="..."
+          height="100%"
+        />
+        <div class="card-body">
+          <h4 class="card-title">مشروع اكتال 1</h4>
+          <ul class="card-list offer d-flex justify-content-between py-4 flex-wrap">
+            <li class="card-item">
+              <strong class="mb-2">عدد الوحدات</strong>
+              <br />
+              <i class="fa-regular fa-building icon-col"></i>
+              <strong>14</strong>
+            </li>
+            <li class="card-item">
+              <strong class="mb-2">متاح</strong>
+              <br />
+              <i class="fa-solid fa-percent icon-col"></i>
+              <strong>34</strong>
+            </li>
+
+            <li class="card-item">
+              <strong class="mb-2">المساحات</strong>
+              <br />
+              <i class="fa-solid fa-ruler-vertical icon-col"></i>
+              <strong>من 350 ~ 450 متر</strong>
+            </li>
+
+            <li class="card-item">
+              <strong class="mb-2">الموقع</strong>
+              <br />
+              <i class="fa-solid fa-location-dot icon-col"></i>
+              <strong>الرياض,السعودية</strong>
+            </li>
+          </ul>
+          <p class="card-text ms-auto">
+            <a href="./intersted.html">
+              <button class="btna">
+                <span>تسجيل اهتمام</span>
+              </button>
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="container card mb-3 position-relative my-4">
+        <p class="badge position-absolute offer-bage">متاح</p>
+
+        <img
+          src="./image/2.jpg"
+          class="card-img-top py-2"
+          alt="..."
+          height="100%"
+        />
+        <div class="card-body">
+          <h4 class="card-title">مشروع اكتال 1</h4>
+          <ul class="card-list offer d-flex justify-content-between py-4 flex-wrap">
+            <li class="card-item">
+              <strong class="mb-2">عدد الوحدات</strong>
+              <br />
+              <i class="fa-regular fa-building icon-col"></i>
+              <strong>14</strong>
+            </li>
+            <li class="card-item">
+              <strong class="mb-2">متاح</strong>
+              <br />
+              <i class="fa-solid fa-percent icon-col"></i>
+              <strong>34</strong>
+            </li>
+
+            <li class="card-item">
+              <strong class="mb-2">المساحات</strong>
+              <br />
+              <i class="fa-solid fa-ruler-vertical icon-col"></i>
+              <strong>من 350 ~ 450 متر</strong>
+            </li>
+
+            <li class="card-item">
+              <strong class="mb-2">الموقع</strong>
+              <br />
+              <i class="fa-solid fa-location-dot icon-col"></i>
+              <strong>الرياض,السعودية</strong>
+            </li>
+          </ul>
+          <p class="card-text ms-auto">
+            <a href="./intersted.html">
+              <button class="btna">
+                <span>تسجيل اهتمام</span>
+              </button>
+            </a>
+          </p>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- projects -->
+
+    <section class="property" id="property">
+      <div class="contain">
+        <p class="section-subtitle">المشاريع</p>
+
+        <h2 class="h3 section-title">المشاريع متاحة</h2>
+      </div>
+
+      <div class="contain my-4">
+        <div class="card mb-3 m-auto" style="max-width: 80%">
+          <div class="row g-0">
+            <div class="col-md-4 position-relative">
+              <a href="./project-details.html" class="position-relative h-100">
+                <img
+                  src="./assets/images/property-1.jpg"
+                  class="img-fluid rounded-start rounded-1 h-100"
+                  alt="..."
+                />
+                <div
+                  class="progress position-absolute w-100"
+                  role="progressbar"
+                  aria-valuenow="95"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div class="progress-stacked position-absolute w-100">
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Segment one"
+                      aria-valuenow="15"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="width: 80%"
+                    >
+                      <div class="progress-bar bg-secondary">80% مباع</div>
+                    </div>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Segment two"
+                      aria-valuenow="30"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="width: 20%"
+                    >
+                      <div class="progress-bar progAvil">متاح 20%</div>
+                    </div>
+                  </div>
+                </div></a
+              >
+            </div>
+            <a href="./project-details.html" class="col-md-8 text-dark">
+              <div>
+                <div class="card-body">
+                  <div
+                    class="d-flex offer-mob flex-row justify-content-between align-content-between"
+                  >
+                    <div class="txt pt-4">
+                      <h5 class="card-title">مشروع اكتال 1</h5>
+                      <p class="card-text">
+                        مشروع إيفا: حيث تلتقي الفخامة بالراحة في كل زاوية.
+                      </p>
+                    </div>
+                    <img
+                      src="./assets/images/4852466.jpg"
+                      alt="dev"
+                      class="w-25"
+                    />
+                  </div>
+                  <div class="card-text">
+                    <div class="card-body">
+                      <ul
+                        class="card-list offer d-flex flex-row justify-content-between py-4 flex-wrap"
+                      >
+                        <li class="card-item">
+                          <p class="largeScreen">عدد الوحدات</p>
+                          <div class="d-flex pb-3">
+                            <i
+                              class="fa-regular fa-building icon-col ps-2 pt-1"
+                            ></i>
+                            <span> 14 وحدة </span>
+                          </div>
+                        </li>
+
+                        <li class="card-item">
+                          <p class="largeScreen">المساحات</p>
+
+                          <div class="d-flex">
+                            <i
+                              class="fa-solid fa-ruler-vertical icon-col ps-2 pt-1"
+                            ></i>
+                            <p>من 350 ~ 450 متر</p>
+                          </div>
+                        </li>
+
+                        <li class="card-item">
+                          <p class="largeScreen">الموقع</p>
+                          <div class="d-flex">
+                            <i
+                              class="fa-solid fa-location-dot icon-col ps-1 pt-1"
+                            ></i>
+                            <p>الرياض,السعودية</p>
+                          </div>
+                        </li>
+                      </ul>
+                      <p class="card-text ms-auto"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="contain my-4">
+        <div class="card mb-3 m-auto" style="max-width: 80%">
+          <div class="row g-0">
+            <div class="col-md-4 position-relative">
+              <a href="./project-details.html" class="position-relative h-100">
+                <img
+                  src="./assets/images/property-2.jpg"
+                  class="img-fluid rounded-start rounded-1 h-100"
+                  alt="..."
+                />
+                <div
+                  class="progress position-absolute w-100"
+                  role="progressbar"
+                  aria-valuenow="95"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div class="progress-stacked position-absolute w-100">
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Segment one"
+                      aria-valuenow="15"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="width: 85%"
+                    >
+                      <div class="progress-bar bg-secondary">85% مباع</div>
+                    </div>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Segment two"
+                      aria-valuenow="30"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="width: 15%"
+                    >
+                      <div class="progress-bar progAvil">متاح 15%</div>
+                    </div>
+                  </div>
+                </div></a
+              >
+            </div>
+            <a href="./project-details.html" class="col-md-8 text-dark">
+              <div>
+                <div class="card-body">
+                  <div
+                    class="d-flex offer-mob flex-row justify-content-between align-content-between"
+                  >
+                    <div class="txt pt-4">
+                      <h5 class="card-title">مشروع اكتال 4</h5>
+                      <p class="card-text">
+                        مشروع إيفا: حيث تلتقي الفخامة بالراحة في كل زاوية.
+                      </p>
+                    </div>
+                    <img
+                      src="./assets/images/4852466.jpg"
+                      alt="dev"
+                      class="w-25"
+                    />
+                  </div>
+                  <div class="card-text">
+                    <div class="card-body">
+                      <ul
+                        class="card-list offer d-flex flex-row justify-content-between py-4 flex-wrap"
+                      >
+                        <li class="card-item">
+                          <p class="largeScreen">عدد الوحدات</p>
+                          <div class="d-flex pb-3">
+                            <i
+                              class="fa-regular fa-building icon-col ps-2 pt-1"
+                            ></i>
+                            <span> 14 وحدة </span>
+                          </div>
+                        </li>
+
+                        <li class="card-item">
+                          <p class="largeScreen">المساحات</p>
+
+                          <div class="d-flex">
+                            <i
+                              class="fa-solid fa-ruler-vertical icon-col ps-2 pt-1"
+                            ></i>
+                            <p>من 350 ~ 450 متر</p>
+                          </div>
+                        </li>
+
+                        <li class="card-item">
+                          <p class="largeScreen">الموقع</p>
+                          <div class="d-flex">
+                            <i
+                              class="fa-solid fa-location-dot icon-col ps-1 pt-1"
+                            ></i>
+                            <p>الرياض,السعودية</p>
+                          </div>
+                        </li>
+                      </ul>
+                      <p class="card-text ms-auto"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="contain my-4">
+        <div class="card mb-3 m-auto" style="max-width: 80%">
+          <div class="row g-0">
+            <div class="col-md-4 position-relative">
+              <a href="./project-details.html" class="position-relative h-100">
+                <img
+                  src="./assets/images/property-3.jpg"
+                  class="img-fluid rounded-start rounded-1 h-100"
+                  alt="..."
+                />
+                <div
+                  class="progress position-absolute w-100"
+                  role="progressbar"
+                  aria-valuenow="95"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div class="progress-stacked position-absolute w-100">
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Segment one"
+                      aria-valuenow="15"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="width: 57%"
+                    >
+                      <div class="progress-bar bg-secondary">57% مباع</div>
+                    </div>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Segment two"
+                      aria-valuenow="30"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="width: 43%"
+                    >
+                      <div class="progress-bar progAvil">متاح 43%</div>
+                    </div>
+                  </div>
+                </div></a
+              >
+            </div>
+            <a href="./project-details.html" class="col-md-8 text-dark">
+              <div>
+                <div class="card-body">
+                  <div
+                    class="d-flex offer-mob flex-row justify-content-between align-content-between"
+                  >
+                    <div class="txt pt-4">
+                      <h5 class="card-title">مشروع اكتال 4</h5>
+                      <p class="card-text">
+                        مشروع إيفا: حيث تلتقي الفخامة بالراحة في كل زاوية.
+                      </p>
+                    </div>
+                    <img
+                      src="./assets/images/4852466.jpg"
+                      alt="dev"
+                      class="w-25"
+                    />
+                  </div>
+                  <div class="card-text">
+                    <div class="card-body">
+                      <ul
+                        class="card-list offer d-flex flex-row justify-content-between py-4 flex-wrap"
+                      >
+                        <li class="card-item">
+                          <p class="largeScreen">عدد الوحدات</p>
+                          <div class="d-flex pb-3">
+                            <i
+                              class="fa-regular fa-building icon-col ps-2 pt-1"
+                            ></i>
+                            <span> 14 وحدة </span>
+                          </div>
+                        </li>
+
+                        <li class="card-item">
+                          <p class="largeScreen">المساحات</p>
+
+                          <div class="d-flex">
+                            <i
+                              class="fa-solid fa-ruler-vertical icon-col ps-2 pt-1"
+                            ></i>
+                            <p>من 350 ~ 450 متر</p>
+                          </div>
+                        </li>
+
+                        <li class="card-item">
+                          <p class="largeScreen">الموقع</p>
+                          <div class="d-flex">
+                            <i
+                              class="fa-solid fa-location-dot icon-col ps-1 pt-1"
+                            ></i>
+                            <p>الرياض,السعودية</p>
+                          </div>
+                        </li>
+                      </ul>
+                      <p class="card-text ms-auto"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="contain my-4">
+        <div class="card mb-3 m-auto" style="max-width: 80%">
+          <div class="row g-0">
+            <div class="col-md-4 position-relative">
+              <a href="./project-details.html" class="position-relative h-100">
+                <img
+                  src="./assets/images/property-4.png"
+                  class="img-fluid rounded-start rounded-1 h-100"
+                  alt="..."
+                />
+                <div
+                  class="progress position-absolute w-100"
+                  role="progressbar"
+                  aria-valuenow="95"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div class="progress-stacked position-absolute w-100">
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Segment one"
+                      aria-valuenow="15"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="width: 60%"
+                    >
+                      <div class="progress-bar bg-secondary">60% مباع</div>
+                    </div>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Segment two"
+                      aria-valuenow="30"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="width: 40%"
+                    >
+                      <div class="progress-bar progAvil">متاح 40%</div>
+                    </div>
+                  </div>
+                </div></a
+              >
+            </div>
+            <a href="./project-details.html" class="col-md-8 text-dark">
+              <div>
+                <div class="card-body">
+                  <div
+                    class="d-flex offer-mob flex-row justify-content-between align-content-between"
+                  >
+                    <div class="txt pt-4">
+                      <h5 class="card-title">مشروع اكتال 4</h5>
+                      <p class="card-text">
+                        مشروع إيفا: حيث تلتقي الفخامة بالراحة في كل زاوية.
+                      </p>
+                    </div>
+                    <img
+                      src="./assets/images/4852466.jpg"
+                      alt="dev"
+                      class="w-25"
+                    />
+                  </div>
+                  <div class="card-text">
+                    <div class="card-body">
+                      <ul
+                        class="card-list offer d-flex flex-row justify-content-between py-4 flex-wrap"
+                      >
+                        <li class="card-item">
+                          <p class="largeScreen">عدد الوحدات</p>
+                          <div class="d-flex pb-3">
+                            <i
+                              class="fa-regular fa-building icon-col ps-2 pt-1"
+                            ></i>
+                            <span> 14 وحدة </span>
+                          </div>
+                        </li>
+
+                        <li class="card-item">
+                          <p class="largeScreen">المساحات</p>
+
+                          <div class="d-flex">
+                            <i
+                              class="fa-solid fa-ruler-vertical icon-col ps-2 pt-1"
+                            ></i>
+                            <p>من 350 ~ 450 متر</p>
+                          </div>
+                        </li>
+
+                        <li class="card-item">
+                          <p class="largeScreen">الموقع</p>
+                          <div class="d-flex">
+                            <i
+                              class="fa-solid fa-location-dot icon-col ps-1 pt-1"
+                            ></i>
+                            <p>الرياض,السعودية</p>
+                          </div>
+                        </li>
+                      </ul>
+                      <p class="card-text ms-auto"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+        - #FOOTER
+      -->
+    <footer class="footer">
+      <div class="footer-top w-100">
+        <div class="container">
+          <div class="row d-flex flex-row justify-content-between">
+            <div
+              class="col-md-4 col-sm-12 d-flex flex-column align-items-center"
+            >
+              <div class="footer-brand">
+                <a href="#">
+                  <img
+                    src="./assets/images/aktal logo footer.png"
+                    alt="Homeverse logo"
+                    width="180px"
+                    class="mb-2 pb-5"
+                  />
+                </a>
+                <!-- 
+                  <p class="section-text">
+                    تقدم شركة أكتال العقارية للمشـروع الخدمات التسـويقية الكاملة
+                    وتقديم الخدمات اللوجسـتية وإدارة المبيعات بشكل احترافي وتقديم
+                    الحلول البنكية والعمل على الإنتاج الرقمي وتقديم تقارير الاعمال.
+                  </p> -->
+
+                <ul class="contact-list">
+                  <li>
+                    <a href="#" class="contact-link">
+                      <ion-icon name="location-outline"></ion-icon>
+
+                      <span>الرياض, السعودية</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="tel:+0123456789" class="contact-link">
+                      <ion-icon name="call-outline"></ion-icon>
+
+                      <span>920033262</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="mailto:contact@homeverse.com" class="contact-link">
+                      <ion-icon name="mail-outline"></ion-icon>
+
+                      <span>info@aktal.com.sa</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-md-4 col-sm-12 d-flex flex-column align-items-center"
+            >
+              <ul class="footer-list about-comp">
+                <li>
+                  <p class="footer-list-title p">عن الشركة</p>
+                </li>
+                <div>
+                  <ul class="d-flex flex-column">
+                    <li>
+                      <a href="#about" class="footer-link px-2">من نحن</a>
+                    </li>
+
+                    <li>
+                      <a href="#service" class="footer-link px-2">الخدمات</a>
+                    </li>
+
+                    <li>
+                      <a href="#blog" class="footer-link px-2"
+                        >الموقع علي الخريطة</a
+                      >
+                    </li>
+                    <li>
+                      <a href="./offers.html" class="footer-link px-2"
+                        >العروض</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </ul>
+            </div>
+            <div
+              class="col-md-4 col-sm-12 text-center d-flex flex-column align-items-center mt-lg-0 mt-sm-5"
+            >
+              <ul class="footer-list">
+                <li>
+                  <p class="footer-list-title p">تواصل معنا</p>
+                </li>
+                <ul class="social-list">
+                  <li>
+                    <a
+                      href="https://twitter.com/aktal_sa"
+                      class="header-top-social-link"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.instagram.com/aktal_sa"
+                      class="header-top-social-link"
+                      target="_blank"
+                    >
+                      <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.snapchat.com/add/aktal_sa"
+                      class="header-top-social-link"
+                      target="_blank"
+                    >
+                      <ion-icon name="logo-snapchat"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.youtube.com/c/AktalRealEstate"
+                      class="header-top-social-link"
+                      target="_blank"
+                    >
+                      <ion-icon name="logo-youtube"></ion-icon>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.tiktok.com/@aktal_sa?_t=8mwboomCKUJ&_r=1"
+                      class="header-top-social-link"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                  </li>
+                </ul>
+                <li class="pt-5">
+                  <div class="apps footer-list">
+                    <div
+                      class="head d-flex justify-content-center align-content-center flex-column"
+                    >
+                      <p class="footer-list-title">
+                        <img
+                          src="./assets/images/faal.png"
+                          alt="faal"
+                          class="w-25 m-auto"
+                        />
+                      </p>
+                      <p>1200019381</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="text-white" />
+
+      <div class="footer-bottom">
+        <div class="contain">
+          <p class="copyright">
+            <strong>جميع الحقوق محفوظة</strong> <a href="#">&copy;اكتال</a> 2024
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- 
+        - custom js link
+      -->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- 
+        - ionicon link
+      -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

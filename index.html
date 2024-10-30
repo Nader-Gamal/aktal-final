@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>اكتال العقارية</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/aktal logo footer.png"
+      type="image/svg+xml"
+    />
+
+    <!-- 
+    - custom css link
+  -->
+    <script
+      src="https://kit.fontawesome.com/2655b3b7cf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style ng.css" />
+    <!-- Map plugin -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css"
+    />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="overlay" data-overlay></div>
+      <div class="header-top">
+        <div class="contain d-flex flex-row-reverse py-2">
+          <ul class="header-top-list">
+            <li>
+              <a href="tel:+966920033262" class="header-top-link">
+                <span>33262 9200</span>
+
+                <ion-icon name="call-outline"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info@aktal.com.sa" class="header-top-link">
+                <span>info@aktal.com.sa</span>
+
+                <ion-icon name="mail-outline"></ion-icon>
+              </a>
+            </li>
+          </ul>
+
+          <div class="wrapper">
+            <ul class="header-top-social-list d-flex flex-row-reverse">
+              <li>
+                <a
+                  href="https://twitter.com/aktal_sa"
+                  class="header-top-social-link"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.instagram.com/aktal_sa"
+                  class="header-top-social-link"
+                  target="_blank"
+                >
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.snapchat.com/add/aktal_sa"
+                  class="header-top-social-link"
+                  target="_blank"
+                >
+                  <ion-icon name="logo-snapchat"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.youtube.com/c/AktalRealEstate"
+                  class="header-top-social-link"
+                  target="_blank"
+                >
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.tiktok.com/@aktal_sa?_t=8mwboomCKUJ&_r=1"
+                  traget="_blank"
+                  class="header-top-social-link"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-tiktok"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-bottom">
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <div
+            href="#"
+            class="d-flex justify-content-between flex-row flex-nowrap mobhead"
+          >
+            <a href="./index.html">
+              <img
+                src="./assets/images/aktal logo.png"
+                alt="aktal logo"
+                width="150px"
+            /></a>
+            <a
+              class="btn mob-nav"
+              data-bs-toggle="offcanvas"
+              href="#offcanvasExample"
+              role="button"
+              aria-controls="offcanvasExample"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </div>
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+          >
+            <div
+              class="offcanvas-header bg-light sub-nav flex justify-content-end"
+            >
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div>
+              <div class="nav-contain">
+                <ul class="mob-nav-items">
+                  <li class="d-flex my-4 mx-2 px-2">
+                    <i class="fa-solid fa-house pt-1 pe-4 text-color"></i>
+                    <a href="./index.html"><p class="text-dark">الرئيسية</p></a>
+                  </li>
+                  <li class="d-flex my-4 mx-2 px-2">
+                    <i class="fa-solid fa-list pt-1 pe-4 text-color"></i>
+                    <a href="./index.html#about"
+                      ><p class="text-dark">من نحن</p></a
+                    >
+                  </li>
+                  <li class="d-flex my-4 mx-2 px-2">
+                    <i class="fa-solid fa-store pt-1 pe-4 text-color"></i>
+                    <a href="./index.html#service"
+                      ><p class="text-dark">الخدمات</p></a
+                    >
+                  </li>
+                  <li class="d-flex my-4 mx-2 px-2">
+                    <i class="fa-solid fa-copyright pt-1 pe-4 text-color"></i>
+                    <a href="./offers.html"><p class="text-dark">العروض</p></a>
+                  </li>
+                </ul>
+
+                <ul class="mob-nav-items">
+                  <li class="d-flex my-4 mx-2 px-2">
+                    <i
+                      class="fa-solid fa-location-crosshairs pt-1 pe-4 text-color"
+                    ></i>
+                    <a href="./index.html#blog"
+                      ><p class="text-dark">اماكن تواجدنا</p></a
+                    >
+                  </li>
+                  <li class="d-flex my-4 mx-2 px-2">
+                    <i
+                      class="fa-solid fa-headphones-simple pt-1 pe-4 text-color"
+                    ></i>
+                    <a href="./contact.html"
+                      ><p class="text-dark">تواصل معنا</p></a
+                    >
+                  </li>
+                  <li class="d-flex my-4 mx-2 px-2">
+                    <i class="fa-solid fa-globe pt-1 pe-4 text-color"></i>
+                    <a href="./contact.html"><p class="text-dark">اللغة</p></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <nav class="navbar d-flex" data-navbar>
+            <div class="navbar-bottom">
+              <ul class="navbar-list">
+                <li>
+                  <a href="#hero" class="navbar-link" data-nav-link>الرئيسية</a>
+                </li>
+
+                <li>
+                  <a href="#about" class="navbar-link" data-nav-link>من نحن</a>
+                </li>
+
+                <li>
+                  <a href="#service" class="navbar-link" data-nav-link
+                    >الخدمات</a
+                  >
+                </li>
+
+                <li>
+                  <a href="./offers.html" class="navbar-link" data-nav-link
+                    >العروض</a
+                  >
+                </li>
+
+                <li>
+                  <a href="#blog" class="navbar-link" data-nav-link
+                    >اماكن تواجدنا</a
+                  >
+                </li>
+
+                <li>
+                  <a href="./contact.html" class="navbar-link" data-nav-link
+                    >تواصل معنا</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="lang-btn pb-2">
+            <div class="dropdown">
+              <button
+                class="btn revMain-col dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-solid fa-globe"></i>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item text-end" href="#">العربية</a></li>
+                <li>
+                  <a class="dropdown-item text-end" href="#">الانجليزية</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <!-- <section class="hero" id="home">
+          <div class="contain">
+            <div class="hero-content">
+              <p class="hero-subtitle">
+                <ion-icon name="home"></ion-icon>
+
+                <span class="fw-semibold">حلول سكنية تناسبك </span>
+              </p>
+
+              <h2 class="h1 hero-title">
+                نعمل بأعلى معايير الجودة لنحقق تطلعاتكم
+              </h2>
+
+              <p class="hero-text">
+                أكتال يتيح لك عالما واسعا من الخيارات العقارية المميزة
+              </p>
+
+              <a href="#property"><button class="btna">اطلب عقارك</button></a>
+            </div>
+
+            <figure class="hero-banner">
+              <img
+                src="./assets/images/hero-banner.png"
+                alt="Modern house model"
+                class="w-100"
+              />
+            </figure>
+          </div>
+        </section> -->
+
+        <section id="hero">
+          <div class="carousell">
+            <!-- list item -->
+            <div class="list">
+              <a href="./project-details.html" class="item">
+                <img src="./image/1.jpeg" />
+                <div class="content">
+                  <div>
+                    <div class="author">
+                      <span class="badge main-col">متاح</span>
+                    </div>
+                    <div class="title">مشروع إيفا فيلا في القمراء 3</div>
+                    <div class="topic d-flex my-3">
+                      <span
+                        >مشروع جديد في قلب الرياض يحتوي علي العديد من الوحدات
+                        المتميزة</span
+                      >
+                    </div>
+                  </div>
+                  <div class="des">
+                    <div class="fetures d-flex justify-content-around">
+                      <div class="location">
+                        <p>الموقع</p>
+                        <p>الرياض , السعودية</p>
+                      </div>
+                      <div class="location">
+                        <p>نوع الوحدات</p>
+                        <p>فيلل</p>
+                      </div>
+                      <div class="location">
+                        <p>عدد الوحدات</p>
+                        <p>09</p>
+                      </div>
+                    </div>
+                    <div class="innerline position-absolute"></div>
+                  </div>
+                </div>
+              </a>
+              <a href="./project-details.html" class="item">
+                <img src="./image/2.jpg" />
+                <div class="content">
+                  <div>
+                    <div class="author">
+                      <span class="badge main-col">متاح</span>
+                    </div>
+                    <div class="title">مشروع إيفا فيلا في القمراء 3</div>
+                    <div class="topic d-flex my-3">
+                      <span
+                        >مشروع جديد في قلب الرياض يحتوي علي العديد من الوحدات
+                        المتميزة</span
+                      >
+                    </div>
+                  </div>
+                  <div class="des">
+                    <div class="fetures d-flex justify-content-around">
+                      <div class="location">
+                        <p>الموقع</p>
+                        <p>الرياض , السعودية</p>
+                      </div>
+                      <div class="location">
+                        <p>نوع الوحدات</p>
+                        <p>فيلل</p>
+                      </div>
+                      <div class="location">
+                        <p>عدد الوحدات</p>
+                        <p>09</p>
+                      </div>
+                    </div>
+                    <div class="innerline position-absolute"></div>
+                  </div>
+                </div>
+              </a>
+              <a href="./project-details.html" class="item">
+                <img src="./image/5.jpg" />
+                <div class="content">
+                  <div>
+                    <div class="author">
+                      <span class="badge main-col">متاح</span>
+                    </div>
+                    <div class="title">مشروع إيفا فيلا في القمراء 3</div>
+                    <div class="topic d-flex my-3">
+                      <span
+                        >مشروع جديد في قلب الرياض يحتوي علي العديد من الوحدات
+                        المتميزة</span
+                      >
+                    </div>
+                  </div>
+                  <div class="des">
+                    <div class="fetures d-flex justify-content-around">
+                      <div class="location">
+                        <p>الموقع</p>
+                        <p>الرياض , السعودية</p>
+                      </div>
+                      <div class="location">
+                        <p>نوع الوحدات</p>
+                        <p>فيلل</p>
+                      </div>
+                      <div class="location">
+                        <p>عدد الوحدات</p>
+                        <p>09</p>
+                      </div>
+                    </div>
+                    <div class="innerline position-absolute"></div>
+                  </div>
+                </div>
+              </a>
+              <a href="./project-details.html" class="item">
+                <img src="./image/4.png" />
+                <div class="content">
+                  <div>
+                    <div class="author">
+                      <span class="badge main-col">متاح</span>
+                    </div>
+                    <div class="title">مشروع إيفا فيلا في القمراء 3</div>
+                    <div class="topic d-flex my-3">
+                      <span
+                        >مشروع جديد في قلب الرياض يحتوي علي العديد من الوحدات
+                        المتميزة</span
+                      >
+                    </div>
+                  </div>
+                  <div class="des">
+                    <div class="fetures d-flex justify-content-around">
+                      <div class="location">
+                        <p>الموقع</p>
+                        <p>الرياض , السعودية</p>
+                      </div>
+                      <div class="location">
+                        <p>نوع الوحدات</p>
+                        <p>فيلل</p>
+                      </div>
+                      <div class="location">
+                        <p>عدد الوحدات</p>
+                        <p>09</p>
+                      </div>
+                    </div>
+                    <div class="innerline position-absolute"></div>
+                  </div>
+                </div>
+              </a>
+              <a href="./project-details.html" class="item">
+                <img src="./image/5.jpg" />
+                <div class="content">
+                  <div>
+                    <div class="author">
+                      <span class="badge main-col">متاح</span>
+                    </div>
+                    <div class="title">مشروع إيفا فيلا في القمراء 3</div>
+                    <div class="topic d-flex my-3">
+                      <span
+                        >مشروع جديد في قلب الرياض يحتوي علي العديد من الوحدات
+                        المتميزة</span
+                      >
+                    </div>
+                  </div>
+                  <div class="des">
+                    <div class="fetures d-flex justify-content-around">
+                      <div class="location">
+                        <p>الموقع</p>
+                        <p>الرياض , السعودية</p>
+                      </div>
+                      <div class="location">
+                        <p>نوع الوحدات</p>
+                        <p>فيلل</p>
+                      </div>
+                      <div class="location">
+                        <p>عدد الوحدات</p>
+                        <p>09</p>
+                      </div>
+                    </div>
+                    <div class="innerline position-absolute"></div>
+                  </div>
+                </div>
+              </a>
+              <a href="./project-details.html" class="item">
+                <img src="./image/6.jpg" />
+                <div class="content">
+                  <div>
+                    <div class="author">
+                      <span class="badge main-col">متاح</span>
+                    </div>
+                    <div class="title">مشروع إيفا فيلا في القمراء 3</div>
+                    <div class="topic d-flex my-3">
+                      <span
+                        >مشروع جديد في قلب الرياض يحتوي علي العديد من الوحدات
+                        المتميزة</span
+                      >
+                    </div>
+                  </div>
+                  <div class="des">
+                    <div class="fetures d-flex justify-content-around">
+                      <div class="location">
+                        <p>الموقع</p>
+                        <p>الرياض , السعودية</p>
+                      </div>
+                      <div class="location">
+                        <p>نوع الوحدات</p>
+                        <p>فيلل</p>
+                      </div>
+                      <div class="location">
+                        <p>عدد الوحدات</p>
+                        <p>09</p>
+                      </div>
+                    </div>
+                    <div class="innerline position-absolute"></div>
+                  </div>
+                </div>
+              </a>
+              <a href="./project-details.html" class="item">
+                <img src="./image/7.png" />
+                <div class="content">
+                  <div>
+                    <div class="author">
+                      <span class="badge main-col">متاح</span>
+                    </div>
+                    <div class="title">مشروع إيفا فيلا في القمراء 3</div>
+                    <div class="topic d-flex my-3">
+                      <span
+                        >مشروع جديد في قلب الرياض يحتوي علي العديد من الوحدات
+                        المتميزة</span
+                      >
+                    </div>
+                  </div>
+                  <div class="des">
+                    <div class="fetures d-flex justify-content-around">
+                      <div class="location">
+                        <p>الموقع</p>
+                        <p>الرياض , السعودية</p>
+                      </div>
+                      <div class="location">
+                        <p>نوع الوحدات</p>
+                        <p>فيلل</p>
+                      </div>
+                      <div class="location">
+                        <p>عدد الوحدات</p>
+                        <p>09</p>
+                      </div>
+                    </div>
+                    <div class="innerline position-absolute"></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- list thumnail -->
+            <div class="thumbnail">
+              <a href="./project-details.html" class="item">
+                <img src="image/1.jpeg" />
+                <div class="content">
+                  <div class="title">مشروع اكتال 01</div>
+                  <!-- <div class="description">
+                          
+                      </div> -->
+                </div>
+              </a>
+              <a href="./project-details.html" class="item">
+                <img src="image/2.jpg" />
+                <div class="content">
+                  <div class="title">مشروع اكتال 02</div>
+                  <!-- <div class="description">
+                          Description
+                      </div> -->
+                </div>
+              </a>
+              <a href="./project-details.html" class="item">
+                <img src="image/4.png" />
+                <div class="content">
+                  <div class="title">مشروع اكتال 03</div>
+                  <!-- <div class="description">
+                          Description
+                      </div> -->
+                </div>
+              </a>
+              <a href="./project-details.html" class="item">
+                <img src="image/5.jpg" />
+                <div class="content">
+                  <div class="title">مشروع اكتال 04</div>
+                  <!-- <div class="description">
+                        Description
+                    </div> -->
+                </div>
+              </a>
+              <a href="./project-details.html" class="item">
+                <img src="image/6.jpg" />
+                <div class="content">
+                  <div class="title">مشروع اكتال 05</div>
+                  <!-- <div class="description">
+                      Description
+                  </div> -->
+                </div>
+              </a>
+              <a href="./project-details.html" class="item">
+                <img src="image/7.png" />
+                <div class="content">
+                  <div class="title">مشروع اكتال 06</div>
+                  <!-- <div class="description">
+                    Description
+                </div> -->
+                </div>
+              </a>
+            </div>
+            <!-- next prev -->
+
+            <div class="arrows">
+              <button id="prev" class="text-center">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+              <button id="next" class="text-center">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+            </div>
+            <!-- time running -->
+            <div class="time"></div>
+          </div>
+        </section>
+
+        <!-- 
+        - #ABOUT
+      -->
+
+        <section class="about" id="about">
+          <div class="contain">
+            <div class="about-content">
+              <p class="section-subtitle">من نحن</p>
+
+              <h2 class="h3">شركة متخصصة لإدارة وتسويق العقارات</h2>
+
+              <p class="about-text">
+                تأسست على أيدي مجموعة من المستثمرين والمطورين ذو الخبرة الطويلة
+                والمتخصصة في المجال العقاري، حيث انبثقت فكرة تكوين شركة أكتال
+                العقارية من خلال دراسة السوق العقاري في المملكة وفهم احتياجات
+                السوق العقاري وتقديم الخدمات العقارية للملاك والمستثمرين
+                العقاريين والمستهلكين.
+              </p>
+
+              <ul class="about-list">
+                <div class="row-1">
+                  <li class="about-item">
+                    <div class="about-item-icon">
+                      <i class="fa-solid fa-shield-halved icon-col"></i>
+                    </div>
+
+                    <p class="about-item-text pt-2">المصداقية</p>
+                  </li>
+
+                  <li class="about-item">
+                    <div class="about-item-icon">
+                      <i class="fa-solid fa-medal icon-col"></i>
+                    </div>
+
+                    <p class="about-item-text pt-2 quality">الجودة</p>
+                  </li>
+                </div>
+
+                <div class="row-2">
+                  <li class="about-item">
+                    <div class="about-item-icon">
+                      <i class="fa-regular fa-handshake icon-col"></i>
+                    </div>
+
+                    <p class="about-item-text pt-2">الاحترافية</p>
+                  </li>
+
+                  <li class="about-item">
+                    <div class="about-item-icon">
+                      <i class="fa-regular fa-circle-check icon-col"></i>
+                    </div>
+                    <p class="about-item-text pt-2">الدقة</p>
+                  </li>
+                </div>
+              </ul>
+
+              <p class="callout">
+                "بفضل التزامنا الدائم بتحقيق أعلى معايير الجودة والدقة
+                والاحترافية، نسعى جاهدين لتقديم خدمات عقارية استثنائية تلبي
+                تطلعات عملائنا. من خلال فريق عمل متخصص ومتفانٍ، نسعى إلى تحقيق
+                رضا العملاء بتوفير الحلول المناسبة والموثوقة لاحتياجاتهم
+                العقارية."
+              </p>
+
+              <!-- <a href="#service" class="btna">خدماتنا</a> -->
+            </div>
+            <figure class="about-banner">
+              <img
+                src="./assets/images/about-banner-1.png"
+                alt="House interior"
+              />
+
+              <img
+                src="./assets/images/about-banner-2.jpg"
+                alt="House interior"
+                class="abs-img"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <!-- 
+        - #SERVICE
+      -->
+
+        <section class="service" id="service">
+          <div class="contain">
+            <p class="section-subtitle">خدماتنا</p>
+
+            <h2 class="h3 section-title">حلول متكاملة لجميع احتياجاتك</h2>
+
+            <ul class="service-list">
+              <li>
+                <a href="./contact.html"
+                  ><div class="service-card">
+                    <div class="ser-icon mb-3">
+                      <i class="fa-solid fa-house-chimney-window fa-2x"></i>
+                    </div>
+
+                    <h3 class="h5 card-title">
+                      <a href="./contact.html" class="text-dark fw-bold"
+                        >البيع وادارة المشروعات</a
+                      >
+                    </h3>
+
+                    <p class="card-text">
+                      تقدم شركة أكتال العقارية للمشـروع الخدمات التسـويقية
+                      الكاملة وتقديم الخدمات اللوجسـتية
+                    </p>
+
+                    <a href="./contact.html" class="card-link">
+                      <span>تواصل معنا</span>
+
+                      <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </a></div
+                ></a>
+              </li>
+
+              <li>
+                <a href="./contact.html">
+                  <div class="service-card">
+                    <div class="ser-icon mb-3">
+                      <i class="fa-solid fa-bullhorn fa-2x"></i>
+                    </div>
+
+                    <h3 class="h5 card-title">
+                      <a href="./contact.html" class="text-dark fw-bold"
+                        >التسويق</a
+                      >
+                    </h3>
+
+                    <p class="card-text">
+                      التسويق الاحترافي للمنتجات العقارية للأفراد والشركات
+                      وتوفير الوقت والجهد لشركاء النجاح.
+                    </p>
+
+                    <a href="./contact.html" class="card-link">
+                      <span>تواصل معنا</span>
+
+                      <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </a></div
+                ></a>
+              </li>
+              <li>
+                <a href="./contact.html"
+                  ><div class="service-card">
+                    <div class="ser-icon mb-3">
+                      <i class="fa-solid fa-headset fa-2x"></i>
+                    </div>
+
+                    <h3 class="h5 card-title">
+                      <a href="./contact.html" class="text-dark fw-bold"
+                        >استشارة عقارية
+                      </a>
+                    </h3>
+
+                    <p class="card-text">
+                      تقديم المشورة المناسبة والاقتراحات للأفراد والشركات
+                      للاستثمار والشراء في المجال العقاري.
+                    </p>
+
+                    <a href="./contact.html" class="card-link">
+                      <span>تواصل معنا</span>
+
+                      <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </a></div
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #PROPERTY
+      -->
+
+        <!-- 
+        - #FEATURES
+      -->
+
+        <!-- <section class="features">
+          <div class="contain">
+            <p class="section-subtitle">المرافق</p>
+
+            <h2 class="h2 section-title">مرافق البناء</h2>
+
+            <ul class="features-list">
+              <li>
+                <a href="#" class="features-card">
+                  <div class="card-icon">
+                    <ion-icon name="car-sport-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="card-title">اماكن لوقوف السيارات</h3>
+
+                  <div class="card-btna">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="features-card">
+                  <div class="card-icon">
+                    <ion-icon name="water-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="card-title">حمامات السباحة</h3>
+
+                  <div class="card-btna">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="features-card">
+                  <div class="card-icon">
+                    <ion-icon name="shield-checkmark-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="card-title">الامان والحراسة</h3>
+
+                  <div class="card-btna">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="features-card">
+                  <div class="card-icon">
+                    <ion-icon name="fitness-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="card-title">المراكز الطبية</h3>
+
+                  <div class="card-btna">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="features-card">
+                  <div class="card-icon">
+                    <ion-icon name="library-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="card-title">مناطق المكتبات</h3>
+
+                  <div class="card-btna">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="features-card">
+                  <div class="card-icon">
+                    <ion-icon name="bed-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="card-title">غرف ضخمة</h3>
+
+                  <div class="card-btna">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="features-card">
+                  <div class="card-icon">
+                    <ion-icon name="home-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="card-title">منازل ذكية</h3>
+
+                  <div class="card-btna">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="features-card">
+                  <div class="card-icon">
+                    <ion-icon name="football-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="card-title">ملاعب الاطفال</h3>
+
+                  <div class="card-btna">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section> -->
+
+        <!-- 
+        - #BLOG
+      -->
+
+        <section class="blog" id="blog">
+          <div class="contain">
+            <p class="section-subtitle">مشاريعنا</p>
+
+            <h2 class="h3 section-title">اماكن تواجدنا</h2>
+
+            <div id="map"></div>
+          </div>
+        </section>
+        <!-- 
+        - #CTA
+      -->
+
+        <!-- <section class="cta">
+          <div class="contain">
+            <div class="cta-card">
+              <div class="card-content">
+                <h2 class="h2 card-title">تبحث عن منزل الاحلام؟</h2>
+
+                <p class="card-text">
+                  أكتال يتيح لك عالما واسعا من الخيارات العقارية المميزة
+                </p>
+              </div>
+
+              <a href="./offers.html">
+                <button class="btna cta-btna">
+                  <span>اكتشف المزيد</span>
+
+                  <ion-icon
+                    name="arrow-forward-outline"
+                    class="mt-1"
+                  ></ion-icon>
+                </button>
+              </a>
+            </div>
+          </div>
+        </section> -->
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="footer-top w-100">
+        <div class="container">
+          <div class="row d-flex flex-row justify-content-between">
+            <div
+              class="col-md-4 col-sm-12 d-flex flex-column align-items-center"
+            >
+              <div class="footer-brand">
+                <a href="#">
+                  <img
+                    src="./assets/images/aktal logo footer.png"
+                    alt="Homeverse logo"
+                    width="180px"
+                    class="mb-2 pb-5"
+                  />
+                </a>
+                <!-- 
+                <p class="section-text">
+                  تقدم شركة أكتال العقارية للمشـروع الخدمات التسـويقية الكاملة
+                  وتقديم الخدمات اللوجسـتية وإدارة المبيعات بشكل احترافي وتقديم
+                  الحلول البنكية والعمل على الإنتاج الرقمي وتقديم تقارير الاعمال.
+                </p> -->
+
+                <ul class="contact-list">
+                  <li>
+                    <a href="#" class="contact-link">
+                      <ion-icon name="location-outline"></ion-icon>
+
+                      <span>الرياض, السعودية</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="tel:+0123456789" class="contact-link">
+                      <ion-icon name="call-outline"></ion-icon>
+
+                      <span>920033262</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="mailto:contact@homeverse.com" class="contact-link">
+                      <ion-icon name="mail-outline"></ion-icon>
+
+                      <span>info@aktal.com.sa</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-md-4 col-sm-12 d-flex flex-column align-items-center"
+            >
+              <ul class="footer-list about-comp">
+                <li>
+                  <p class="footer-list-title p">عن الشركة</p>
+                </li>
+                <div>
+                  <ul class="d-flex flex-column">
+                    <li>
+                      <a href="#about" class="footer-link px-2">من نحن</a>
+                    </li>
+
+                    <li>
+                      <a href="#service" class="footer-link px-2">الخدمات</a>
+                    </li>
+
+                    <li>
+                      <a href="#blog" class="footer-link px-2"
+                        >الموقع علي الخريطة</a
+                      >
+                    </li>
+                    <li>
+                      <a href="./offers.html" class="footer-link px-2"
+                        >العروض</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </ul>
+            </div>
+            <div
+              class="col-md-4 col-sm-12 text-center d-flex flex-column align-items-center mt-lg-0 mt-sm-5"
+            >
+              <ul class="footer-list">
+                <li>
+                  <p class="footer-list-title p">تواصل معنا</p>
+                </li>
+                <ul class="social-list">
+                  <li>
+                    <a
+                      href="https://twitter.com/aktal_sa"
+                      class="header-top-social-link"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.instagram.com/aktal_sa"
+                      class="header-top-social-link"
+                      target="_blank"
+                    >
+                      <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.snapchat.com/add/aktal_sa"
+                      class="header-top-social-link"
+                      target="_blank"
+                    >
+                      <ion-icon name="logo-snapchat"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.youtube.com/c/AktalRealEstate"
+                      class="header-top-social-link"
+                      target="_blank"
+                    >
+                      <ion-icon name="logo-youtube"></ion-icon>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.tiktok.com/@aktal_sa?_t=8mwboomCKUJ&_r=1"
+                      class="header-top-social-link"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                  </li>
+                </ul>
+                <li class="pt-5">
+                  <div class="apps footer-list">
+                    <div
+                      class="head d-flex justify-content-center align-content-center flex-column"
+                    >
+                      <p class="footer-list-title">
+                        <img
+                          src="./assets/images/faal.png"
+                          alt="faal"
+                          class="w-25 m-auto"
+                        />
+                      </p>
+                      <p>1200019381</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="text-white" />
+
+      <div class="footer-bottom">
+        <div class="contain">
+          <p class="copyright">
+            <strong>جميع الحقوق محفوظة</strong> <a href="#">&copy;اكتال</a> 2024
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <div>
+      <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"
+      />
+
+      <div class="nav-bottom">
+        <div class="popup-whatsapp fadeIn">
+          <div class="content-whatsapp -top">
+            <button type="button" class="closePopup">
+              <i class="material-icons icon-font-color">close</i>
+            </button>
+            <p>مرحبا, كيف تريد ان نساعدك😊</p>
+          </div>
+          <div class="content-whatsapp -bottom">
+            <input
+              class="whats-input"
+              id="whats-in"
+              type="text"
+              placeholder="Send message..."
+            />
+            <button class="send-msPopup" id="send-btn" type="button">
+              <i class="material-icons icon-font-color--black">send</i>
+            </button>
+          </div>
+        </div>
+        <button type="button" id="whats-openPopup" class="whatsapp-button">
+          <i class="fa-brands fa-whatsapp text-white fa-2x pt-1"></i>
+        </button>
+        <div class="circle-anime"></div>
+      </div>
+    </div>
+
+    <!-- JS map  -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster-src.js"></script>
+    <script src="./assets/js/map.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- 
+    - custom js link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/whatsapp.js"></script>
+  </body>
+</html>
