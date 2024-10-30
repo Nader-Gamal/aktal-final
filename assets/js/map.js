@@ -12,7 +12,7 @@ L.tileLayer(
 
 // Define a blue icon for markers
 var blueIcon = L.icon({
-  iconUrl: "./assets/images/pinPoint.png",
+  iconUrl: "./assets/images/pinpoint.png",
   iconAnchor: [12, 41],
   popupAnchor: [1, -34],
 });
